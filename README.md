@@ -1,22 +1,17 @@
-
-
 ---
-license: apache-2.0
 sdk: streamlit
 app_file: app.py
 ---
 
 # 🎓 校园政策问答助手 (RAG + Agent)
 
-基于 RAG（检索增强生成）的智能问答系统，支持南大、复旦、西电等高校政策文件。
-集成 Agent 工具调用：支持政策问答、计算 GPA、查询课表。
+> 🎥 **在线演示视频**：[点击在 B站 查看完整功能演示](https://www.bilibili.com/video/BV13QpR6iE1K/?vd_source=f969351d5f21ddbf60dfc3ee98934077)
 
-## 🚀 在线体验
-（部署成功后填入链接）
+基于 RAG（检索增强生成）与 Agent 工具调用的校园政策问答助手。支持：政策问答 | GPA计算 | 课表查询。
 
-## 🛠️ 技术栈
-- 文档分块：固定长度 vs 标题层级（对比实验）
-- 向量库：Chroma（本地持久化）
-- 检索模型：BAAI/bge-small-zh-v1.5（本地推理）
-- 大模型：智谱 GLM-4-Flash（免费 API）
-- 前端：Streamlit
+## 🚀 本地一键运行
+1. `git clone https://github.com/yuxin2711/campus-policy-rag.git`
+2. `pip install -r requirements.txt`
+3. 在根目录新建 `.env`，写入 `ZHIPU_API_KEY=你的密钥`
+4. `streamlit run app.py`
+5. 打开浏览器访问 `http://localhost:8501`
