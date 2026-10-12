@@ -27,7 +27,7 @@ def get_rag_chain():
     # 4. 初始化 LLM（使用智谱 API，兼容 OpenAI 格式）
     llm = ChatOpenAI(
         model="glm-4-flash", # 免费模型
-        api_key=os.getenv("ZHIPU_API_KEY"),
+        api_key=os.getenv("ZHIPU_API_KEY","11b33f5c78544af598ab1d2b857cba66.ctM4TNALonc4CvMW"),
         base_url="https://open.bigmodel.cn/api/paas/v4/",
         temperature=0.1
     )
